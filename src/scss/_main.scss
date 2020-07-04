@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: #2c2c2c;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+}

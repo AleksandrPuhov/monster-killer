@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monster Killer</title>
+
+    <!--build:css css/style.min.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+
+    <!--build:js js/main.min.js -->
+    <script src="js/main.js" defer></script>
+    <!-- endbuild -->
+
+</head>
+
+<body>
+    <section class="bars">
+        <div class="bars-monster">
+            <h2 class="bars-title">MONSTER HEALTH</h2>
+            <progress class="bars-progress" id="monster-health" max="100" value="100">100%</progress>
+        </div>
+        <div class="bars-player">
+            <h2 class="bars-title">PLAYER HEALTH<span class="bars-player-bonus" id="bonus-life">1</span></h2>
+            <progress class="bars-progress" id="player-health" max="100" value="100">100%</progress>
+        </div>
+    </section>
+    <section class="buttons">
+        <ul class="buttons-list">
+            <li class="buttons-list__item">
+                <button class="buttons-btn" id="attack-btn">ATTACK</button>
+            </li>
+            <li class="buttons-list__item">
+                <button class="buttons-btn" id="strong-attack-btn">STRONG ATTACK</button>
+            </li>
+            <li class="buttons-list__item">
+                <button class="buttons-btn" id="heal-btn">HEAL</button>
+            </li>
+            <li class="buttons-list__item">
+                <button class="buttons-btn" id="log-btn">SHOW LOG</button>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.bars {
+    @include section-style;
+
+    &-monster {
+    }
+    &-player {
+        &-bonus {
+            font-weight: bold;
+            color: $color-white;
+            background: $color-secondary;
+            border: 1px solid $color-secondary;
+            padding: 0.15rem 0.5rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 0 0.5rem;
+        }
+    }
+
+    &-title {
+        font-size: 1.25rem;
+        margin: 1rem 0.5rem;
+    }
+
+    &-progress {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 80%;
+        height: 2rem;
+        color: $color-secondary;
+        border: 1px solid $color-primaty;
+
+        &[value]::-webkit-progress-bar,
+        &[value] {
+            background-color: #eee;
+            box-shadow: 0 2px 5px $box-shadow-color inset;
+        }
+
+        &[value]::-webkit-progress-value {
+            background-color: $color-primaty;
+            transition: all 0.2s ease-out;
+        }
+
+        &[value]::-moz-progress-bar {
+            background-color: $color-primaty;
+            transition: all 0.2s ease-out;
+        }
+    }
+}

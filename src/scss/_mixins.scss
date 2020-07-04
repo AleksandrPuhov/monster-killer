@@ -1,0 +1,9 @@
+@mixin section-style {
+    margin: 2rem auto;
+    width: 30rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px $box-shadow-color;
+    background: $color-white;
+}
