@@ -1,0 +1,14 @@
+.logs {
+    @include section-style;
+    padding: 10px;
+
+    &-inner {
+        height: 220px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    &-text {
+        font-weight: normal;
+    }
+}
