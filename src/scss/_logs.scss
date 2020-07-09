@@ -10,5 +10,26 @@
 
     &-text {
         font-weight: normal;
+        display: flex;
+        flex-direction: column;
+        &-item {
+            display: flex;
+            text-align: left;
+            &__num {
+                flex-basis: 35px;
+            }
+            &__person {
+                flex-basis: 90px;
+            }
+            &__action {
+                flex-basis: 70px;
+            }
+            &__target {
+                flex-basis: 90px;
+            }
+            &__damage {
+                flex-basis: 40px;
+            }
+        }
     }
 }

@@ -22,11 +22,17 @@
     <section class="bars">
         <div class="bars-monster">
             <h2 class="bars-title">MONSTER HEALTH</h2>
-            <progress class="bars-progress" id="monster-health" max="100" value="100">100%</progress>
+            <h4 class="bars-subtitle">
+                <span id="monster-health-text">100</span> / <span id="monster-health-max">100</span>
+            </h4>
+            <progress class="bars-progress" id="monster-health-bar" max="100" value="100">100%</progress>
         </div>
         <div class="bars-player">
             <h2 class="bars-title">PLAYER HEALTH<span class="bars-player-bonus" id="bonus-life">1</span></h2>
-            <progress class="bars-progress" id="player-health" max="100" value="100">100%</progress>
+            <h4 class="bars-subtitle">
+                <span id="player-health-text">100</span> / <span id="player-health-max">100</span>
+            </h4>
+            <progress class="bars-progress" id="player-health-bar" max="100" value="100">100%</progress>
         </div>
     </section>
     <section class="buttons">
@@ -40,14 +46,12 @@
             <li class="buttons-list__item">
                 <button class="buttons-btn" id="heal-btn">HEAL</button>
             </li>
-            <li class="buttons-list__item">
-                <button class="buttons-btn" id="log-btn">SHOW LOG</button>
-            </li>
         </ul>
     </section>
     <section class="logs">
         <div class="logs-inner">
-            <div class="logs-text" id="logs-text"></div>
+            <ul class="logs-text" id="logs-text">
+            </ul>
         </div>
     </section>
 </body>
